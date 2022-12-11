@@ -1,0 +1,9 @@
+[package]
+name = "tx"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+primes = "0.3.0"
+fast-math = "0.1"
+owo-colors = "3.5.0"
