@@ -123,7 +123,7 @@ fn parse_tx(tx: String) -> Result<u64, String> {
         if brack_depth > 0 {
             child_call_buffer.push(c);
         } else if c == ':' {
-            n *= 2
+            n <<= 1;
         } else if c == 'P' || c == '-' {
             return Err(format!{"Found unexpected \"{}\".", c});
         }
