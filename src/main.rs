@@ -225,7 +225,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn symetrical_translations() {
+    fn symmetrical_translations() {
         for n in 0..1_000 {
             let tx = translate(n).unwrap();
             let n2 = parse_tx(tx.codegen()).unwrap();
@@ -266,7 +266,7 @@ mod tests {
             let tx = translate(n).unwrap().codegen();
             tx.chars().for_each(|c| {
                 if c != ':' {
-                    panic!("Power of 2 (harmonic) had none colon character.");
+                    panic!("Power of 2 (harmonic) had non-colon character.");
                 }
             });
             if tx.len() != i {
