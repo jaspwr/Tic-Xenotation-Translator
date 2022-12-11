@@ -9,5 +9,5 @@ build() {
 }
 
 package() {
-    cargo install --path $pkgdir
+    cargo install --path $pkgdir"/../.."
 }

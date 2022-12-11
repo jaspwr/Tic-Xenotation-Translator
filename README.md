@@ -48,4 +48,4 @@ Requires Rust and Cargo. See [here](https://www.rust-lang.org/tools/install) for
 $ git clone https://github.com/jaspwr/Tic-Xenotation-Translator.git
 $ cargo install --path [path-to-cloned-repo]
 ```
-Your binary will be in `target/release/`.
+You will need to add Cargo's bin directory to your PATH environment variable. See [here](https://doc.rust-lang.org/cargo/commands/cargo-install.html#environment-variables) for more information.
