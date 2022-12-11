@@ -1,5 +1,5 @@
 # Tic Xenotation Translator
-Version (-P): . ((-P)): . ((-P)):
+Version `(-P):` . `((-P)):` . `((-P)):`
 
 ## Usage
 #### Decimal → TX
