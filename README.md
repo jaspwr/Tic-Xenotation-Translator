@@ -1,6 +1,6 @@
 # Tic Xenotation Translator
 
-![build](https://img.shields.io/github/workflow/status/jaspwr/Tic-Xenotation-Translator/Rust)
+![build](https://img.shields.io/github/actions/workflow/status/jaspwr/Tic-Xenotation-Translator/rust.yml?branch=main)
 ![licence](https://img.shields.io/github/license/jaspwr/Tic-Xenotation-Translator)
 ![version](https://img.shields.io/badge/version-(--P)%3A%20.%20((--P))%3A%20.%20((--P))%3A-blue)
 
