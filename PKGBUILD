@@ -13,18 +13,18 @@ source=("$pkgname::git+https://github.com/jaspwr/Tic-Xenotation-Translator#branc
 sha256sums=('SKIP')
 
 prepare() {
-    cd "Tic-Xenotation-Translator"
+    cd "$pkgname"
     cargo fetch --target "$CARCH-unknown-linux-gnu"
 }
 
 build() {
-    cd "Tic-Xenotation-Translator"
+    cd "$pkgname"
     export RUSTUP_TOOLCHAIN=stable
     export CARGO_TARGET_DIR=target
     cargo build --release
 }
 
 package() {
-    cd "Tic-Xenotation-Translator"
-    install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/tx"
+    cd "$pkgname"
+    install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/$pkgname"
 }
